@@ -16,11 +16,11 @@ org/AR.js@3.4.7/aframe/build/aframe-ar.js"></script>
   <a-scene embedded 
     arjs="sourceType: webcam; debugUIEnabled: false;" 
     vr-mode-ui="enabled: false"> 
-    <a-marker type="pattern" url="mymarker.patt">
-      <a-box position="0 0.5 0" 
-        width="1" height="1" depth="1" 
-        color="#FF0000"></a-box> 
-    </a-marker> 
+   <a-marker type="pattern" url="mymarker.patt">
+  <a-entity gltf-model="url(kotatsu.glb)"
+            position="0 0 0" rotation="0 45 0" scale="0.05 0.05 0.05">
+  </a-entity>
+</a-marker>
     <a-entity camera></a-entity> 
   </a-scene> 
 </body> 
